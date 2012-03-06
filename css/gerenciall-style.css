@@ -391,7 +391,7 @@ Works well with inline login or inline menu block style */
     border-width: 2px 2px 0;
     color: #666666;
     display: inline-block;
-    font-family: calibri arial;
+    font-family: calibri;
     font-size: 13px;
     font-weight: bold;
     height: 35px;
@@ -4339,12 +4339,21 @@ div .collapsiblock.collapsiblockCollapsed a{
 	background-color:#333;
 	height:90px;
 }
+td.views-field-last-updated.active,
+td.views-field-last-updated{
+	font-size:12px;
+	color:#333;
+}
 .views-field-created,
 .views-field-last-updated em{
 	font-style:normal;
 	color:#999;
 	font-size:11px;
 	padding-bottom:6px;
+}
+.views-field-last-updated em{
+	display:inline-block;
+	padding-top:6px;
 }
 .views-field-last-updated a,
 .views-field-last-updated h2,
@@ -4390,4 +4399,33 @@ div .collapsiblock.collapsiblockCollapsed a{
 	display: inline-block;
 	margin-bottom: 6px;
 	padding-bottom: 6px;
+}
+.block-title-inside-content{
+	   color: #333333;
+    display: inline-block;
+    font-family: Calibri;
+    font-size: 16px;
+    line-height: 120%;
+    padding-top: 6px;
+    vertical-align: top;
+}
+#commons-core-group-create-content-block-form{
+	display:inline-block;
+}
+#edit-node-type-wrapper.form-item{
+	width:398px;
+}
+td.views-field.select{
+	border-right:1px solid #ececec;
+}
+#views-bulk-operations-submit{
+	text-align:center;
+}
+#views-bulk-operations-submit input.form-submit{
+	display: inline-block;
+    float: none;
+    width: 80%;
+}
+#edit-objects-selector-wrapper{
+	text-align:center;
 }
