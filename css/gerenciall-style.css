@@ -122,7 +122,7 @@ body {
 
 #header-site-info{
 	float: left;
-	width: 648px;
+	width: 660px;
 }
 #header-site-info .inner { margin-left:0px;}
 
@@ -227,7 +227,7 @@ body {
 	margin-bottom:0px;
 	margin-top:0px;
 	overflow: hidden;
-    width: 292px;
+	width: 280px;
 	background-color:#fff;
 }
 #header-group .block,
@@ -250,7 +250,7 @@ Works well with inline login or inline menu block style */
 .header-region {
 	float: right;
 	margin: 44px 10px 0px 0px;
-	width: 292px;
+	width: 280px;
 }
 
 /*user login form if it is in the Header region */
@@ -590,12 +590,15 @@ Works well with inline login or inline menu block style */
     position: absolute;
     right: 0;
     top: -73px;
-    width: 260px;
+    width: 250px;
     /*box-shadow: 3px 3px #D5D5D5;*/
 }
 
-#search-box-inner { float: left; width: 250px;  margin:0px;}
-
+#search-box-inner {
+	float: left;
+	width: 260px;
+	margin:0px;
+}
 .search-box-inner input#edit-search-theme-form-header {
 	background: #fff none no-repeat 0 0;
 	border-right: 0px;
@@ -630,14 +633,14 @@ Works well with inline login or inline menu block style */
 
 form#search-theme-form {
 	background:none;
-	width:250px;
+	width:260px;
 	padding-bottom:6px;
 }
 #edit-search-theme-form-1-wrapper label { display:none;}
 #edit-search-theme-form-1-wrapper .form-item { margin:0px; }
 #search.container-inline div:first-child {
 	float:left;
-	width:214px;
+	width:224px;
 }
 #edit-search-theme-form-1-wrapper input  {
 	background-color: #FFFFFF;
@@ -646,6 +649,7 @@ form#search-theme-form {
     height: 27px;
     margin: 0;
     padding: 0 8px;
+    width:209px;
 }
 form#search-theme-form input.form-submit { 
 	border:none;
@@ -787,7 +791,7 @@ form#search-theme-form input.form-submit {
 	padding: 4px 0px 10px 0px;
 	margin-top: 30px;
 	margin-bottom: -20px;
-	border-top: solid 1px #afaaaa;
+	border: 0 none;
 }
 
 .footer-inner {}
@@ -1350,9 +1354,7 @@ ul.pager li a:focus {
 /* Forms/-------------------------------------------------------------- */
 
 /* Typography and backgrounds for all form buttons */
-#page .grid16-11{
-	width:648px;	
-}
+
 
 form input.form-submit,
 .views-exposed-form .views-exposed-widget input.form-submit {
@@ -1598,7 +1600,7 @@ tr.first.last td {
 }
 
 table tr td.active {
-	background-color: #fafafa;
+	background-color: transparent;
 }
 
 tr.drag td,
@@ -2287,7 +2289,7 @@ input.list-add-to-cart:focus {
 	width:100%;
 }
 #sidebar-last{
-	width:292px;
+	width:280px;
 	float:right;
 }
 .sidebar-last .block h2.block-title,
@@ -3737,7 +3739,7 @@ a.feed-icon img {
   background-image: url("../images/bullet-blue.png");
     background-position: 10px center;
     background-repeat: no-repeat;
-    left: 177px;
+    left: 164px;
     margin: 0;
     padding: 0 0 0 16px;
     position: absolute;
@@ -4092,7 +4094,7 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
 /*Fron page columns*/
 #content-front #content-front-left {
 	float:left;
-	width:314px;
+	width:320px;
 	margin-right:20px;
 }
 #content-front #content-front-left .content-inner {
@@ -4294,18 +4296,18 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
     -webkit-border-radius: 10px 10px 0 0;
 
     
-background-image: linear-gradient(bottom, rgb(216,52,7) 71%, rgb(241,138,43) 100%);
-background-image: -o-linear-gradient(bottom, rgb(216,52,7) 71%, rgb(241,138,43) 100%);
-background-image: -moz-linear-gradient(bottom, rgb(216,52,7) 71%, rgb(241,138,43) 100%);
-background-image: -webkit-linear-gradient(bottom, rgb(216,52,7) 71%, rgb(241,138,43) 100%);
-background-image: -ms-linear-gradient(bottom, rgb(216,52,7) 71%, rgb(241,138,43) 100%);
+background-image: linear-gradient(bottom, rgb(216,52,7) 20%, rgb(241,138,43) 88%);
+background-image: -o-linear-gradient(bottom, rgb(216,52,7) 20%, rgb(241,138,43) 88%);
+background-image: -moz-linear-gradient(bottom, rgb(216,52,7) 20%, rgb(241,138,43) 88%);
+background-image: -webkit-linear-gradient(bottom, rgb(216,52,7) 20%, rgb(241,138,43) 88%);
+background-image: -ms-linear-gradient(bottom, rgb(216,52,7) 20%, rgb(241,138,43) 88%);
 
 background-image: -webkit-gradient(
 	linear,
 	left bottom,
 	left top,
-	color-stop(0.71, rgb(216,52,7)),
-	color-stop(1, rgb(241,138,43))
+	color-stop(0.2, rgb(216,52,7)),
+	color-stop(0.88, rgb(241,138,43))
 );
     
 }
@@ -4418,14 +4420,34 @@ td.views-field-last-updated{
 td.views-field.select{
 	border-right:1px solid #ececec;
 }
-#views-bulk-operations-submit{
-	text-align:center;
+
+.views-bulk-operations-form thead{
+	display:none;
+	
 }
 #views-bulk-operations-submit input.form-submit{
-	display: inline-block;
-    float: none;
-    width: 80%;
+	
 }
 #edit-objects-selector-wrapper{
-	text-align:center;
+	
+}
+.block-powered_by_nivaria{
+	 float: right;
+    padding-top: 30px;
+    width: auto;
+}
+#footer-inner #block-block-1{
+	width:auto;
+	padding-top:20px;
+}
+#views-bulk-operations-submit {
+    overflow: hidden;
+    padding: 14px 14px 0;
+}
+.view-most-active-users-gerencia .views-field-field-number-posts-vname{
+	margin-left:107px !important;
+}
+.view-stream-recent-content .views-field-title{
+	display: block;
+    margin-left: 64px;
 }
