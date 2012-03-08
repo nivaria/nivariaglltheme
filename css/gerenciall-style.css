@@ -2288,7 +2288,9 @@ input.list-add-to-cart:focus {
 	font-weight: normal;
 	margin: 6px 0px;
 }
-.sidebar-last { margin-top:5px;}
+.sidebar-last {
+	margin-top:0px;
+}
 .sidebar-last .sidebar-last-inner .block {
 	margin:0;
 	width:100%;
