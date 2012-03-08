@@ -4478,3 +4478,6 @@ td.views-field.select{
 	background-color: transparent;
     border: 0 none;
 }
+tbody{
+	border:0 none;
+}
