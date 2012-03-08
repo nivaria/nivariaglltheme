@@ -39,7 +39,7 @@
             
 			<?php if ($logo || $site_name || $site_slogan): ?>
 			<div id="header-site-info" class="header-site-info block">
-				<div id="header-site-info-inner" class="header-site-info-inner inner">
+				<div id="header-site-info-inner" class="header-site-info-inner inner"><span id="slogan">INTRANET GERENCIA URBANISMO</span>
 					<?php if ($logo): ?>
                     <div id="logo">
                         <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
