@@ -340,3 +340,9 @@ function gll20_devel_node_form($form) {
 
   return $output;
 }
+
+function gll20_devel_preprocess_mimemail_message(&$variables) {
+  global $base_url;
+  $variables['logo'] = $base_url . theme_get_setting('logo');
+  $variables['front_page'] = url();
+}
