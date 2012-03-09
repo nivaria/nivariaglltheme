@@ -346,3 +346,24 @@ function gll20_devel_preprocess_mimemail_message(&$variables) {
   $variables['logo'] = $base_url . theme_get_setting('logo');
   $variables['front_page'] = url();
 }
+function gll20_devel_username($user, $link = TRUE) {
+  if ($object->uid && function_exists('profile_load_profile')) {
+    profile_load_profile($user);
+  }
+  if (isset($user->profile_name)) {
+    $name = $user->profile_name . ' ' . $user->profile_last_name;
+  }
+  else if (isset($user->name)) {
+    $name = $user->name;
+  }
+  else {
+    $name = variable_get('anonymous', 'Anonymous');
+    $link = FALSE;
+  }
+  if ($link && user_access('access user profiles')) {
+    return l($name, 'user/' . $user->uid, array('title' => t('View user profile.')));
+  }
+  else {
+    return check_plain($name);
+  }
+}
