@@ -4696,8 +4696,14 @@ body.page-node #content-group{
 body.page-node #content-group #content-group-inner{
 	padding: 28px 0 20px;
 }
+body.page-node.node-type-group #content-group #content-group-inner{
+	padding:0;
+}
 body.page-node #sidebar-last{
 	padding: 28px 0 20px;
+}
+body.page-node.node-type-group #sidebar-last{
+	padding: 0;
 }
 body.page-node #main-group{
 	width:100%;
@@ -4713,6 +4719,8 @@ body.page-node.node-type-group #main{
 }
 body.page-node.node-type-group #content-group{
 	width:660px;
+	box-shadow:none;
+	padding:0;
 }
 body.page-node h1.title{
 	padding: 0 0 10px;
