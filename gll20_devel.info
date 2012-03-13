@@ -64,6 +64,10 @@ skinr[gerenciall_blocks][options][3][label] = Añadir padding al bloque
 skinr[gerenciall_blocks][options][3][class] = gerenciall_add_padding
 skinr[gerenciall_blocks][options][4][label] = Bloque formulario
 skinr[gerenciall_blocks][options][4][class] = gerenciall_block_form
+skinr[gerenciall_blocks][options][5][label] = Bloque botón
+skinr[gerenciall_blocks][options][5][class] = gerenciall_block_button
+skinr[gerenciall_blocks][options][6][label] = Lista de enlaces
+skinr[gerenciall_blocks][options][6][class] = gerenciall_block_list
 
 ; Information added by drupal.org packaging script on 2012-01-18
 version = "6.x-2.4"
