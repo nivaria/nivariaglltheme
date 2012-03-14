@@ -4254,7 +4254,7 @@ white-space: normal;
 white-space: normal;
 }
 .node-form .form-text {
-    width: 88%;
+    width: 84%;
 }
 
 textarea, .form-item input, .form-item select, #content-region input.form-text {
@@ -4862,6 +4862,10 @@ thead + tbody {
 	display: inline;
 	padding-right: 0.5em;
 }
+.filefield-file-info .filefield-file,
+.filefield-file-info .filename{
+	display:block;
+}
 .grouping-curtags-wrapper {
     display: none;
 }
@@ -5132,4 +5136,11 @@ fieldset .fieldset-wrapper .form-checkboxes .form-item label.option{
 .filefield-element .form-item .description{
 	margin:0;
 	white-space:normal;
+}
+.node-form #field_file_values.content-multiple-table td.content-multiple-drag {
+    padding-left: 0;
+    width: 12px;
+}
+.node-form #field_file_values.content-multiple-table td {
+    padding: 0;
 }
