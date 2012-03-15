@@ -229,6 +229,8 @@ body {
 	overflow: hidden;
 	width: 280px;
 	background-color:#fff;
+	
+	box-shadow:2px 28px 4px #D6D6D6;
 }
 #header-group .block,
 #header-group .block .inner{
@@ -595,9 +597,9 @@ Works well with inline login or inline menu block style */
     padding: 8px 16px;
     position: absolute;
     right: 0;
-    top: -73px;
+    top: -74px;
     width: 250px;
-    /*box-shadow: 3px 3px #D5D5D5;*/
+    box-shadow:2px 4px 4px #D6D6D6;
 }
 
 #search-box-inner {
@@ -1404,22 +1406,27 @@ ul.pager li a:focus {
 
 
 .block.gerenciall_block_form{
-	/*border: 1px solid #D5D5D5;
-    box-shadow: 3px 3px #D5D5D5;*/
+	width:99%;
 }
 #main .block.gerenciall_block_form .content{
-	padding: 20px;
+	padding: 18px;
 	background-color: #FFFFFF;
-    border: 2px solid #D6D6D6;
+    border: 1px solid #D6D6D6;
     border-radius: 12px 12px 12px 12px;
     -moz-border-radius: 12px 12px 12px 12px;
     -webkit-border-radius: 12px 12px 12px 12px;
     overflow: hidden;
+    
+    border-bottom:0 none;
+    border-right:0 none;
 }
 /* Forms/-------------------------------------------------------------- */
 
 /* Typography and backgrounds for all form buttons */
 
+.view-tag-cloud{
+	padding:12px;
+}
 
 form input.form-submit,
 .views-exposed-form .views-exposed-widget input.form-submit {
@@ -2416,7 +2423,7 @@ input.list-add-to-cart:focus {
 }
 .sidebar-last .sidebar-last-inner .block {
 	margin:0;
-	width:100%;
+	width:99%;
 }
 #sidebar-last{
 	width:280px;
@@ -2449,6 +2456,7 @@ input.list-add-to-cart:focus {
 	float:left;
 	margin-top:0px;
 	padding-top:0;
+	margin-bottom:0px;
 }
 #commons-core-group-create-content-block-form input#edit-submit-1 { float:left; margin-top:0px;}
 
@@ -3905,7 +3913,7 @@ a.feed-icon img {
     width: auto;
 }
 .view-user-meta .views-field-name span.welcome-text {
-    color: #333333;
+    color: #666;
     font-size: 24px;
     font-weight: normal;
     left: 84px;
@@ -3981,6 +3989,9 @@ a.feed-icon img {
 }
 .gerenciall_add_padding.block .inner .content{
 	padding:12px;
+}
+.gerenciall_add_padding.block .inner .content .view-footer p{
+	margin-bottom:0px;
 }
 /*********************/
 /*    hideen items   */
@@ -4392,10 +4403,10 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
 	right:14px;
 }
 .view-content-event-calendar{
-	border: 2px solid #D9D9D9;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
+	border: 0 none;
+    border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    -webkit-border-radius: 12px 12px 12px 12px;
 }
 .block .block-title,
 .gerenciall_default .block-title{    
@@ -4450,19 +4461,29 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
     padding: 0;
 	overflow:hidden;
 	
-	border-right:2px solid #D6D6D6;
-	border-bottom:2px solid #D6D6D6;
+	box-shadow: 2px 4px 4px #D6D6D6;
+	-webkit-box-shadow: 2px 4px 4px #D6D6D6;
+	-moz-box-shadow: 2px 4px 4px #D6D6D6;
+	
 	padding:12px;
 }
 .block.block-views .content,
 .gerenciall_default.block.block-views .content{
 	padding:0;
 }
+.view-num-posts-filtered-by-user .field-content{
+	color:#666;
+}
+div.empty{
+	padding:16px;
+	text-align:center;
+}
 #header-group .block .content,
 #footer .block .content{
 	background-color:transparent;
 	border-radius:0;
 	border:0 none;
+	box-shadow:none;
 }
 .gerenciall_highlight{
 	 /*border: 1px solid #D5D5D5;
@@ -4499,7 +4520,7 @@ background-image: -webkit-gradient(
     line-height: 100%;
     padding: 12px 16px 16px 14px;    
 }
-.gerenciall_highlight .content{
+.block.block-views.gerenciall_highlight .content{
 	background-color: #FFFFFF;
 	border-radius: 0 0 12px 12px;
 	-moz-border-radius: 0 0 12px 12px;
@@ -4508,8 +4529,11 @@ background-image: -webkit-gradient(
 	padding: 0;
 	overflow:hidden;
 	
-	border-right:2px solid #D6D6D6;
-	border-bottom:2px solid #D6D6D6;
+	box-shadow: 2px 4px 4px #D6D6D6;
+	-webkit-box-shadow: 2px 4px 4px #D6D6D6;
+	-moz-box-shadow: 2px 4px 4px #D6D6D6;
+	
+	padding-bottom:12px;
 }
 div .collapsiblock a{
 	background-image:url('../images/expanded.png');
@@ -4606,7 +4630,7 @@ td.views-field-last-updated{
 	display:inline-block;
 }
 #edit-node-type-wrapper.form-item{
-	width:388px;
+	width:384px;
 }
 td.views-field.select{
 	border-right:1px solid #ececec;
@@ -4656,7 +4680,10 @@ table .mini-day-on a {
 }
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
-.calendar-calendar tr.even td.today {
+.calendar-calendar tr.even td.today,
+.calendar-calendar tr td.has-events.today,
+.calendar-calendar tr.odd td.has-events.today,
+.calendar-calendar tr.even td.has-events.today {
     background-color: #999999;
 }
 .calendar-calendar tr td.has-events,
@@ -4741,6 +4768,9 @@ input.tagging-widget-input{
     color: #666666;
     float:left;
     width:72px;
+}
+.views-bulk-operations-table .form-item label {
+    width:auto;
 }
 .form-item#edit-comment-wrapper label,
 .form-item#edit-body-wrapper label {
