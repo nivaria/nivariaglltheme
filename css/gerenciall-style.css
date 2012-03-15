@@ -8,9 +8,12 @@ body {
 	color: #333;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 75%;
-	background-color: #e9e9e9;
 	padding: 0;
 	margin: 0;
+}
+body.front,
+body.not-front{
+	background-color: #e9e9e9;
 }
 
 a{
@@ -70,6 +73,7 @@ blockquote p:last-child { margin-bottom: 0px;}
 .sidebar-last .block .content {
 	padding: 0px;
 	overflow: hidden;
+	padding:12px 0;
 }
 
 .node .inner ul,
@@ -330,7 +334,10 @@ Works well with inline login or inline menu block style */
 	font-size: .9em;
 	line-height: 1.2em;
 }
-
+.calendar-calendar td .inner div.calendar div,
+.calendar-calendar td .inner div.calendar div a {
+	background-color:#fff;
+}
 /* Nav Group which sits below the header and site inf */
 
 .nav-group-wrapper {
@@ -1419,6 +1426,8 @@ ul.pager li a:focus {
     
     border-bottom:0 none;
     border-right:0 none;
+    
+    box-shadow:2px 4px 4px #D6D6D6;
 }
 /* Forms/-------------------------------------------------------------- */
 
@@ -1427,7 +1436,46 @@ ul.pager li a:focus {
 .view-tag-cloud{
 	padding:12px;
 }
-
+.view-tag-cloud .view-footer p{
+	margin-bottom:0;
+}
+.gerenciall_highlight .view div.more-link{
+	margin-bottom:0;
+}
+#edit-og-directory-wrapper,
+#edit-og-private-wrapper{
+	margin-left:72px;
+	margin-left:90px;
+}
+#edit-field-featured-group-value-wrapper label.option,
+#edit-og-register-wrapper label.option,
+#edit-og-directory-wrapper label.option,
+#edit-og-private-wrapper label.option{
+	    display: block;
+    float: none;
+    margin-bottom: 0.6em;
+    white-space: nowrap;
+}
+#edit-field-featured-group-value-wrapper label.option .form-checkbox,
+#edit-og-register-wrapper label.option .form-checkbox,
+#edit-og-directory-wrapper label.option .form-checkbox,
+#edit-og-private-wrapper label.option .form-checkbox{
+	vertical-align:top;
+}
+#edit-field-featured-group-value-wrapper .description,
+#edit-og-register-wrapper .description,
+#edit-og-directory-wrapper .description,
+#edit-og-private-wrapper .description{
+	margin-left:0;
+}
+.form-checkboxes,
+.form-radios {
+	overflow:hidden;
+}
+.form-checkboxes label.option,
+.form-radios label.option{
+	white-space:nowrap;
+}
 form input.form-submit,
 .views-exposed-form .views-exposed-widget input.form-submit {
   
@@ -1584,6 +1632,8 @@ fieldset legend{
 	font-weight: bold;
 	padding: 0;
 	width: 72px;
+	
+	width:90px;
 }
 .shoutbox-add-form fieldset {
 	overflow: hidden;
@@ -4262,10 +4312,12 @@ body.page-taxonomy #content-content .node .meta .user_badges{ display:none;}
 white-space: normal;
 }
 #content-content .og-feature-description .form-item{
-white-space: normal;
+	white-space: normal;
 }
 .node-form .form-text {
     width: 84%;
+    
+    width:80%
 }
 
 textarea, .form-item input, .form-item select, #content-region input.form-text {
@@ -4381,7 +4433,7 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
     margin: 0;
     padding: 2px 8px !important;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
     width: auto;
 }
 .calendar-calendar div.date-nav .date-prev a,
@@ -4393,6 +4445,7 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
     text-indent: 9999px;
     width: 21px;
     top:14px;
+    white-space:nowrap;
 }
 .calendar-calendar div.date-nav .date-prev a{	
 	background-image:url('../images/arrow-left.png');
@@ -4678,22 +4731,39 @@ table .mini-day-on a {
     height: 27px;
     line-height: 27px;
 }
+div.view-empty p{
+	text-align:center;
+}
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today,
 .calendar-calendar tr td.has-events.today,
 .calendar-calendar tr.odd td.has-events.today,
 .calendar-calendar tr.even td.has-events.today {
+    background-color: transparent;
+    border:2px solid #999 !important;
+}
+.block-views .calendar-calendar tr td.today,
+.block-views .calendar-calendar tr.odd td.today,
+.block-views .calendar-calendar tr.even td.today,
+.block-views .calendar-calendar tr td.has-events.today,
+.block-views .calendar-calendar tr.odd td.has-events.today,
+.block-views .calendar-calendar tr.even td.has-events.today {
     background-color: #999999;
 }
 .calendar-calendar tr td.has-events,
 .calendar-calendar tr.odd td.has-events,
 .calendar-calendar tr.even td.has-events {
+    background-color: transparent;
+}
+.block-views .calendar-calendar tr td.has-events,
+.block-views .calendar-calendar tr.odd td.has-events,
+.block-views .calendar-calendar tr.even td.has-events {
     background-color: #E6651B;
 }
-.calendar-calendar tr td.has-events a,
-.calendar-calendar tr.odd td.has-events a,
-.calendar-calendar tr.even td.has-events a{
+.block-views .calendar-calendar tr td.has-events a,
+.block-views .calendar-calendar tr.odd td.has-events a,
+.block-views .calendar-calendar tr.even td.has-events a{
     color:#fff;
 }
 #block-views-228f369cb15ea72f0c4ceed52aaf99c7 .content{
@@ -4768,6 +4838,8 @@ input.tagging-widget-input{
     color: #666666;
     float:left;
     width:72px;
+    
+    width:90px;
 }
 .views-bulk-operations-table .form-item label {
     width:auto;
@@ -4828,6 +4900,8 @@ input.tagging-widget-input{
 	  clear: left;
     margin-left: 72px;
     padding-top: 10px;
+    
+    margin-left:90px;
 }
 .body-field-wrapper{
 	 border-top: 1px dashed #CCCCCC;
@@ -4918,6 +4992,8 @@ thead + tbody {
 }
 .form-item .description{
 	margin-left:72px;
+	
+	margin-left:90px;
 }
 .grouping-button-container {
     display: inline-block;
@@ -4961,6 +5037,7 @@ body.page-node .sidebar-last .block .content{
     border-radius: 0 0 0 0;
     border-right: 0 none;
     border-top: 1px dashed #D9D9D9;
+    box-shadow:none;
 }
 body.page-node .sidebar-last .block .view-content .item-list ul li.views-row-even,
 body.page-node .sidebar-last .block .view-content .item-list ul li.views-row-odd {
@@ -5116,6 +5193,7 @@ form.fivestar-widget div.description {
 	float: none;
     margin-left: 0;
     width: 100%;
+    margin-bottom:1em;
 }
 #sidebar-last .block.gerenciall_block_form #edit-node-type.form-select{
 	 width: 100%;
