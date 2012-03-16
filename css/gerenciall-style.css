@@ -4856,11 +4856,12 @@ input.tagging-widget-input{
 	background-color: #FFFFFF;
 	float: left;
     padding: 0;
-    width: 478px;
+    width: 472px;
 }
 .body-field-wrapper fieldset.collapsible{
 	display:none;
 }
+.grouping-curtags-wrapper .grouping-tag,
 .field-terms ul li a,
 .og-audience .form-item,
 .grouping-widget-input-og-groups .form-item,
@@ -4888,6 +4889,17 @@ input.tagging-widget-input{
 .grouping-widget-input-og-groups .form-item .form-checkbox{
 	vertical-align:middle;
 }
+div.grouping-curtags-wrapper label {
+    background: none repeat scroll 0 0 transparent;
+    float: none;
+    margin: 0 0 1em;
+    padding: 0;
+    white-space: nowrap;
+}
+.grouping-curtags-wrapper {
+    background-color: transparent;
+}
+.grouping-curtags-wrapper .grouping-tag:hover,
 .field-terms ul li a:hover,
 .tagging-tag:hover {
 	background-color:#ea6311;
@@ -4970,9 +4982,9 @@ thead + tbody {
 .filefield-file-info .filename{
 	display:block;
 }
-.grouping-curtags-wrapper {
+/*.grouping-curtags-wrapper {
     display: none;
-}
+}*/
 .grouping-widget-input-wrapper{
 	display:none;
 }
