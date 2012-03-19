@@ -143,6 +143,10 @@
                                         <h1 class="title"><?php print $title; ?></h1>
                                     <?php endif; ?>
                                     
+                                        <?php 
+                                        if(!(strpos($body_id,'pid-user-'.$user->uid.'-edit')===FALSE)){ 
+                                            print theme('grid_block', $tabs, 'content-tabs'); 
+                                        } ?>
                                     
                                         <?php if ($content): ?>
                                             <div id="content-content" class="content-content">
