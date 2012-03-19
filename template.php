@@ -29,6 +29,9 @@ function gll20_devel_preprocess_page(&$vars) {
     $markup .= '</div><!-- /footer-message -->';
     $vars['footer_message'] = $markup;
   }
+  if(isset($vars['node']) && $vars['node']->type==='group'){
+      $vars['tabs'] = '';
+  }
 }
 
 

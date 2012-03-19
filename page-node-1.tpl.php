@@ -100,7 +100,9 @@
                     <!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
                     <div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
                       <div id="content-group-inner" class="content-group-inner inner">
-                    
+                        <?php if ($title && !$is_front): ?>
+                          <h1 class="title"><?php print $title; ?></h1>
+                        <?php endif; ?>  
 
                         <?php if ($content_top || $help || $messages): ?>
                         <div id="content-top" class="content-top row nested">
