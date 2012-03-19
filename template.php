@@ -6,8 +6,7 @@
  */
 function gll20_devel_breadcrumb($breadcrumb) {
   if (!empty($breadcrumb)) {
-    $html = '<div class="crumbtitle">' . t('You are here:') . '</div>';
-	  $html .= '<div class="breadcrumb">'. implode(' &raquo; ', $breadcrumb) .'</div>';
+    $html .= '<div class="breadcrumb">'. implode(' &gt; ', $breadcrumb) .'</div>';
     return $html;
   }
 }
