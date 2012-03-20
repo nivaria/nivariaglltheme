@@ -400,7 +400,7 @@ Works well with inline login or inline menu block style */
     border-width: 2px 2px 0;
     color: #666666;
     display: inline-block;
-    font-family: calibri;
+    font-family: calibri,arial;
     font-size: 13px;
     font-weight: bold;
     height: 35px;
@@ -419,11 +419,15 @@ Works well with inline login or inline menu block style */
 .primary-menu-inner ul.sf-menu li.sfHover > a {
 	background-color:#fff;
 	color:#ea6311;
+	border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
 }
-.primary-menu-inner ul.sf-menu a:active,
-.primary-menu-inner ul.sf-menu a:focus,
 .primary-menu-inner ul.sf-menu li.active-trail > a  {
-
+ background-color: #EAEAEA;
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .primary-menu-inner ul.sf-menu li.last {}
@@ -583,14 +587,18 @@ Works well with inline login or inline menu block style */
 
 .breadcrumbs.block .breadcrumbs-inner {	margin: 0;}
 
+.breadcrumbs a,
 .breadcrumbs a:link,
 .breadcrumbs a:visited {
 	font-size: 1em;
 	line-height: 1.4em;
 	margin: 0;
 	padding: 0 2px;
+	color:#666;
 }
-
+.breadcrumbs a:last-child{
+	font-weight:bold;
+}
 /* Header - Search-------------------------------------------------------------- */
 #preface-top{
 	position:relative;
@@ -686,7 +694,7 @@ form#search-theme-form input.form-submit {
 }
 .contextual-search-wrapper .contextual-search-launcher,
 .contextual-search-processed .contextual-search-wrapper ul.contextual-search-list {
-  background-color: #ccc;
+  background-color: #999;
   background-image: url('../images/dropdown.png');
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -717,6 +725,8 @@ form#search-theme-form input.form-submit {
   background-repeat: no-repeat;
   margin-top: -2px;
   padding-top: 2px;
+  
+  background:none;
 }
 
 .contextual-search-processed .contextual-search-wrapper ul.contextual-search-list li a.last {
@@ -729,7 +739,7 @@ form#search-theme-form input.form-submit {
 
 .contextual-search-wrapper .contextual-search-launcher:hover,
 .contextual-search-processed .contextual-search-wrapper ul.contextual-search-list li a:hover {
-  background-color: #bbb;
+  background-color: #666;
   text-decoration: none;
 }
 
@@ -1491,7 +1501,7 @@ form input.form-submit,
     padding: 0 12px;
     white-space: nowrap;
 	float:right;
-	font-family:Calibri;
+	font-family:calibri,arial;
 	
 background-image: linear-gradient(top, rgb(238,125,33), rgb(234,100,17) );
 background-image: -o-linear-gradient(top, rgb(238,125,33) , rgb(234,100,17) );
@@ -1560,7 +1570,7 @@ body.page-node .node-form .relations input.form-submit,
     padding: 4px 12px;
     text-transform: lowercase;
     white-space:nowrap;
-    font-family:Calibri;
+    font-family:calibri,arial;
     background-image:none;
 }
 body.page-node .node-form .relations input.form-submit{
@@ -1784,6 +1794,7 @@ tr.drag-previous td {
     border: 0 none;
     display: block;
     padding: 12px 0;
+    box-shadow:none;
 }
 #comments fieldset.collapsible{
 	display:none;
@@ -1794,7 +1805,7 @@ tr.drag-previous td {
     border: 0 none;
     border-radius: 0 0 0 0;
     color: #666666;
-    font-family: Calibri;
+    font-family: calibri,arial;
     font-size: 22px;
     font-weight: normal;
     padding: 0;
@@ -1887,6 +1898,7 @@ div.comment h3.title {}
 	padding:0;
 	margin:0;
 	border:0 none;
+	box-shadow:none;
 }
 div.comment .comment-name a,
 div.comment h3.title a{
@@ -2570,8 +2582,15 @@ dl.search-results .search-result p.search-info {
 	margin-bottom: 10px;
 }
 
-.view .view-content .item-list li.views-row { border-bottom:1px solid #dbdbdb; padding:10px 0px; margin:0px; background:none;}
-
+.view .view-content .item-list li.views-row {
+	border-bottom:1px solid #dbdbdb;
+	padding:10px 0px;
+	margin:0px;
+	background:none;
+}
+.view .view-content .item-list li.views-row:last-child {
+	border:0 none;
+}
 .view .view-content .item-list li.views-row:after {
 	clear: both;
 	content: ".";
@@ -3179,7 +3198,7 @@ body#pid-dashboard h1.title, body#pid-dashboard #breadcrumbs {
 
 /* block calendar */
 .block .calendar-calendar .month-view table tr td {
-	font-weight: bold;
+	font-weight: normal;
 }
 .calendar-calendar td.empty {
     background: none repeat scroll 0 0 #E0E0E0;
@@ -3334,6 +3353,8 @@ div#calpopup-body {
     height: 26px;
     text-align: center;
     padding-top:8px;
+    
+    margin-bottom:0px;
 }
 
 /* views grids*/
@@ -3909,7 +3930,7 @@ a.feed-icon img {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
-    font-family:Calibri;
+    font-family:calibri,arial;
 }
 
 .view-user-meta .views-field-nothing {
@@ -3957,7 +3978,7 @@ a.feed-icon img {
     background-repeat: no-repeat;
     left: 187px;
     margin: 0;
-    padding: 0 0 0 16px;
+    padding: 0 0 0 18px;
     position: absolute;
     white-space: nowrap;
     width: auto;
@@ -3969,7 +3990,7 @@ a.feed-icon img {
     left: 84px;
     position: absolute;
     top: 41px;
-    font-family:Calibri;
+    font-family:calibri,arial;
 }
 .view-user-meta .views-field-name span.username a{
 	 color: #000000;
@@ -4035,7 +4056,7 @@ a.feed-icon img {
 	text-align: justify;
 }
 .tagadelic a{
-	font-family:Calibri;
+	font-family:calibri,arial;
 }
 .gerenciall_add_padding.block .inner .content{
 	padding:12px;
@@ -4414,7 +4435,7 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
 .calendar-calendar div.date-nav h3 {
     color: #333333;
     font-size: 20px;
-    font-family:Calibri;
+    font-family:calibri,arial;
     font-weight:normal;
 }
 .calendar-calendar th.days {
@@ -4431,7 +4452,7 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
     border: 1px solid #ebebeb !important;
     color: #999;
     margin: 0;
-    padding: 2px 8px !important;
+    padding: 5px 8px !important;
     text-align: center;
     vertical-align: top;
     width: auto;
@@ -4499,12 +4520,13 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
 .block .block-title a,
 .gerenciall_default .block-title a{
     color: #333333;
-    font-family: calibri;
+    font-family: calibri,arial;
     line-height: 100%;
     padding: 12px 16px 16px 14px;
     font-size:20px;
 }
 .block .content,
+#main .gerenciall_calendar .content,
 .gerenciall_default .content{
 	background-color: #FFFFFF;
     border-radius: 0 0 12px 12px;
@@ -4519,10 +4541,28 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
 	-moz-box-shadow: 2px 4px 4px #D6D6D6;
 	
 	padding:12px;
+	
+	border:0 none;
 }
+#main .gerenciall_calendar .content,
 .block.block-views .content,
 .gerenciall_default.block.block-views .content{
 	padding:0;
+}
+.content-inner ul,
+.content-inner ol {
+    margin-bottom: 0;
+}
+.block.block-views .content .view-footer{
+	margin-top:0;
+}
+.block.block-views .content .more-link{
+	border-top:1px solid #d4d4d4;
+	padding-top:10px;
+	margin-top:0;
+}
+#main .gerenciall_calendar .content{
+	background-color:transparent;
 }
 .view-num-posts-filtered-by-user .field-content{
 	color:#666;
@@ -4569,7 +4609,7 @@ background-image: -webkit-gradient(
 }
 .gerenciall_highlight .block-title a{
     color: #fff !important;
-    font-family: calibri;
+    font-family: calibri,arial;
     line-height: 100%;
     padding: 12px 16px 16px 14px;    
 }
@@ -4673,7 +4713,7 @@ td.views-field-last-updated{
 .block-title-inside-content{
 	   color: #333333;
     display: inline-block;
-    font-family: Calibri;
+    font-family: calibri,arial;
     font-size: 16px;
     line-height: 120%;
     padding-top: 6px;
@@ -4724,7 +4764,7 @@ table .mini-day-on a {
 }
 #slogan {
     color: #E9E9E9;
-    font-family: Calibri;
+    font-family: calibri,arial;
     font-size: 13px;
     font-style: normal;
     font-weight: bold;
@@ -4750,6 +4790,7 @@ div.view-empty p{
 .block-views .calendar-calendar tr.odd td.has-events.today,
 .block-views .calendar-calendar tr.even td.has-events.today {
     background-color: #999999;
+    border:0 none !important;
 }
 .calendar-calendar tr td.has-events,
 .calendar-calendar tr.odd td.has-events,
@@ -4821,6 +4862,7 @@ body.page-node.node-type-group #content-group{
 }
 body.page-node h1.title{
 	padding: 0 0 10px;
+	width:492px;
 }
 #tagging-widget-container .tagging-widget-input,
 input.tagging-widget-input,
@@ -4862,7 +4904,7 @@ input.tagging-widget-input{
 	display:none;
 }
 .grouping-curtags-wrapper .grouping-tag,
-.field-terms ul li a,
+.node-edit .field-terms ul li a,
 .og-audience .form-item,
 .grouping-widget-input-og-groups .form-item,
 .tagging-tag {
@@ -4900,7 +4942,7 @@ div.grouping-curtags-wrapper label {
     background-color: transparent;
 }
 .grouping-curtags-wrapper .grouping-tag:hover,
-.field-terms ul li a:hover,
+.node-edit .field-terms ul li a:hover,
 .tagging-tag:hover {
 	background-color:#ea6311;
 	color:#fff;
@@ -5021,17 +5063,58 @@ body.page-node .relations legend{
 body.page-node .relations th{
 	    border-bottom: 1px dashed #D9D9D9;
     color: #666666;
-    font-family: Calibri;
+    font-family: calibri,arial;
     font-size: 18px;
     margin: 0 0 10px;
     padding: 0 0 10px;
 }
 body.page-node h1{
 	font-size:30px;
-	font-family:Calibri;	
+	font-family:calibri,arial;
+	font-weight:bold;
 }
 body.page-node h1 a{
 	color:#333;
+}
+body.page-node #content-tabs{
+	display:none;
+}
+body.page-node .node-edit #content-tabs{
+	display:block;
+}
+body.page-node .edit-content-link{
+	/*background-color: #9F167D;*/
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    display: block;
+    font-family: calibri,arial;
+    font-size: 13px;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 12px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    
+    
+    background-image: linear-gradient(bottom, rgb(152,20,117), rgb(177,30,145));
+background-image: -o-linear-gradient(bottom, rgb(152,20,117), rgb(177,30,145));
+background-image: -moz-linear-gradient(bottom, rgb(152,20,117), rgb(177,30,145));
+background-image: -webkit-linear-gradient(bottom, rgb(152,20,117), rgb(177,30,145));
+background-image: -ms-linear-gradient(bottom, rgb(152,20,117), rgb(177,30,145));
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(rgb(152,20,117)),
+	color-stop(rgb(177,30,145))
+);
+}
+body.page-node .edit-content-link:hover{
+	text-decoration:none;
 }
 body.page-node .sidebar-last .block h2.block-title{
 	background:none;
@@ -5039,7 +5122,7 @@ body.page-node .sidebar-last .block h2.block-title{
 }
 body.page-node .sidebar-last .block h2.block-title a{
 	color: #666666;
-    font-family: Calibri;
+    font-family: calibri,arial;
     font-size: 18px;
     padding: 12px 0;
 }
@@ -5075,7 +5158,7 @@ body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-
 .field-file .field-label{
 	background-color: #F2F2F2;
     color: #333333;
-    font-family: Calibri;
+    font-family: calibri,arial;
     font-size: 16px;
     font-weight: normal;
     height: 30px;
@@ -5103,7 +5186,7 @@ color: #666666;
     padding-bottom: 30px;
 }
 .block .field-links .field-label{
-	font-family:Calibri;
+	font-family:calibri,arial;
 	font-size:18px;
 	color:#333;
 	font-weight:normal;

@@ -68,6 +68,8 @@ skinr[gerenciall_blocks][options][5][label] = Bloque botón
 skinr[gerenciall_blocks][options][5][class] = gerenciall_block_button
 skinr[gerenciall_blocks][options][6][label] = Lista de enlaces
 skinr[gerenciall_blocks][options][6][class] = gerenciall_block_list
+skinr[gerenciall_blocks][options][7][label] = Bloque para calendario
+skinr[gerenciall_blocks][options][7][class] = gerenciall_calendar
 
 ; Information added by drupal.org packaging script on 2012-01-18
 version = "6.x-2.4"
