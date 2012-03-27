@@ -87,11 +87,6 @@
       <!-- main row: width = grid_width -->
       <div id="main-wrapper" class="main-wrapper full-width">
         <div id="main" class="main row <?php print $grid_width; ?>">
-                        <?php if ($title && !$is_front): ?>
-                          <h1 class="title"><?php print $title; ?></h1>
-                        <?php endif; ?>
-	
-	
           <div id="main-inner" class="main-inner inner clearfix">
             <?php print theme('grid_row', $sidebar_first, 'sidebar-first', 'nested', $sidebar_first_width); ?>
 
@@ -104,6 +99,9 @@
                   <div id="main-content-inner" class="main-content-inner inner">
                     <!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
                     <div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
+                        <?php if ($title && !$is_front): ?>
+                          <h1 class="title"><?php print $title; ?></h1>
+                        <?php endif; ?>
                       <div id="content-group-inner" class="content-group-inner inner">
 
 
