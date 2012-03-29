@@ -22,7 +22,7 @@
 </head>
 
 <body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">
-  <div id="page" class="page">
+  <div id="page" class="page page-group">
     <div id="page-inner" class="page-inner">
       <div id="skip">
         <a href="#main-content-area"><?php print t('Skip to Main Content Area'); ?></a>
@@ -87,7 +87,9 @@
       <!-- main row: width = grid_width -->
       <div id="main-wrapper" class="main-wrapper full-width">
         <div id="main" class="main row <?php print $grid_width; ?>">
-
+                        <?php if ($title && !$is_front): ?>
+                          <h1 class="title"><?php print $title; ?></h1>
+                        <?php endif; ?>
 	
 	
           <div id="main-inner" class="main-inner inner clearfix">
@@ -102,11 +104,6 @@
                   <div id="main-content-inner" class="main-content-inner inner">
                     <!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
                     <div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
-		    
-                        <?php if ($title && !$is_front): ?>
-                          <h1 class="title"><?php print $title; ?></h1>
-                        <?php endif; ?>
-		    
                       <div id="content-group-inner" class="content-group-inner inner">
 
 

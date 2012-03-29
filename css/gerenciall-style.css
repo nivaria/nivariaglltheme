@@ -1605,8 +1605,8 @@ form .fbsmp-icon-list input.form-submit {
 
 .views-field-subscribe,
 .views-field-leave-group {
-	background: #228bc8 url(../images/button_bkgd.gif) repeat-x bottom left;
-	border:solid 1px #228bc8;
+	background: none;
+	border:0 none;
 	color: #fff;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -4724,7 +4724,7 @@ div h1.collapsiblock.collapsiblockCollapsed a{
 td.views-field-last-updated.active,
 td.views-field-last-updated{
 	font-size:12px;
-	color:#333;
+	color:#666;
 }
 .views-field-created,
 .views-field-last-updated em{
@@ -4894,7 +4894,7 @@ tbody{
 
 
 /* nodes */
-body.page-node #main{
+body #main{
 	background-color:#fff;
 	border:1px solid #e4e4e4;
 	border-radius:12px;
@@ -4903,11 +4903,13 @@ body.page-node #main{
 	padding:0 16px;
 	width:928px;
 }
+body.not-front #content-group,
 body.page-node #content-group{
 	box-shadow: 16px 0 8px 0 #F3F3F3;
     padding-right: 16px;
     width: 600px;
 }
+body.not-front #content-group #content-group-inner,
 body.page-node #content-group #content-group-inner{
 	padding: 28px 0 20px;
 	padding-top:0;
@@ -4915,15 +4917,18 @@ body.page-node #content-group #content-group-inner{
 body.page-node.node-type-group #content-group #content-group-inner{
 	padding:0;
 }
+body.not-front #sidebar-last,
 body.page-node #sidebar-last{
 	padding: 28px 0 20px;
 }
 body.page-node.node-type-group #sidebar-last{
 	padding: 0;
 }
+body.not-front #main-group,
 body.page-node #main-group{
 	width:100%;
 }
+body.front #main,
 body.page-node.node-type-group #main{
 	background-color:transparent;
 	border:0 none;
@@ -4938,10 +4943,14 @@ body.page-node.node-type-group #content-group{
 	box-shadow:none;
 	padding:0;
 }
+body h1.title,
 body.page-node h1.title{
 	padding: 0 0 10px;
 	width:492px;
 	padding-top:24px;
+}
+body .page-group h1.title{
+	padding-top:0;
 }
 #tagging-widget-container .tagging-widget-input,
 input.tagging-widget-input,
@@ -5168,7 +5177,8 @@ body.page-node .node-edit #content-tabs{
 }
 body.page-node .edit-content-link{
     position: absolute;
-    right: 0;
+    top: 30px;
+    right:346px;
 }
 #edit-publish,
 #search-form #edit-submit,
@@ -5185,7 +5195,7 @@ body.page-node .edit-content-link{
 
     text-align: center;
     text-transform: uppercase;
-    top: 0;
+    
     
     
     background-image: linear-gradient(bottom, rgb(152,20,117), rgb(177,30,145));
@@ -5205,16 +5215,19 @@ background-image: -webkit-gradient(
 body.page-node .edit-content-link:hover{
 	text-decoration:none;
 }
+body.not-front .sidebar-last .block h2.block-title,
 body.page-node .sidebar-last .block h2.block-title{
 	background:none;
 	background-color:transparent;
 }
+body.not-front .sidebar-last .block h2.block-title a,
 body.page-node .sidebar-last .block h2.block-title a{
 	color: #666666;
     font-family: calibri,arial;
     font-size: 18px;
     padding: 12px 0;
 }
+body.not-front .sidebar-last .block .content,
 body.page-node .sidebar-last .block .content{
 	background-color: transparent;
     border-bottom: 1px dashed #D9D9D9;
@@ -5223,12 +5236,15 @@ body.page-node .sidebar-last .block .content{
     border-top: 1px dashed #D9D9D9;
     box-shadow:none;
 }
+body.not-front .sidebar-last .block .view-content .item-list ul li.views-row-even,
+body.not-front .sidebar-last .block .view-content .item-list ul li.views-row-odd,
 body.page-node .sidebar-last .block .view-content .item-list ul li.views-row-even,
 body.page-node .sidebar-last .block .view-content .item-list ul li.views-row-odd {
 	background-color: transparent;
     padding-left: 0;
     padding-right: 0;
 }
+body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a,
 body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a{
     color: #0099ff;
     font-size: 12px;
@@ -5512,4 +5528,18 @@ body.page-search #content-group{
     display: block;
     overflow: hidden;
     padding: 0;
+}
+a.user-is-not-member,
+a.user-is-not-member:visited,
+a.user-is-not-member:hover,
+a.user-is-member,
+a.user-is-member:visited,
+a.user-is-member:hover{
+	color:#333;
+}
+#main .view-most-active-users-gerencia .views-field-field-number-posts-vname{
+	margin-top:-22px;
+}
+body.page-node #content-inner-inner{
+	position:static;
 }

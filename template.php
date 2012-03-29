@@ -32,8 +32,25 @@ function gll20_devel_preprocess_page(&$vars) {
   if(isset($vars['node']) && $vars['node']->type==='group'){
       $vars['tabs'] = '';
   }
+  
+  
+  if (isset($vars['node'])) {
+   // If the node type is "blog" the template suggestion will be "page-blog.tpl.php".
+   $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
+  }  
+  
 }
-
+/*function gll20_devel_preprocess_page(&$variables) {
+  if ($variables['node']->type != "") {
+    $variables['template_files'][] = "page-node-" . $variables['node']->type;
+  }
+}*/
+/*function gll20_devel_preprocess_page(&$vars, $hook) {
+  if (isset($vars['node'])) {
+   // If the node type is "blog" the template suggestion will be "page-blog.tpl.php".
+   $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
+  }
+}*/
 
 
 /**
