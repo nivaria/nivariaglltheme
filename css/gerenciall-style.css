@@ -4471,6 +4471,15 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
    float: left;
    margin-right: 12px;
 }
+.field-ds-group-ds-node-date-type-vote .field-fivestar-widget,
+.field-ds-group-ds-node-date-type-vote .field-fivestar-widget .fivestar-widget{
+    float: right;
+}
+.field-ds-group-ds-node-date-type-vote .field-fivestar-widget .description{
+    float: left;
+    margin: 0 8px 0 0;
+}
+
 .field .fivestar-widget label {
     display: none;
 }
